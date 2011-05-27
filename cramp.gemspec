@@ -11,7 +11,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency('activesupport', '~> 3.0.4')
   s.add_dependency('rack',          '~> 1.2.1')
-  s.add_dependency('eventmachine')
+  s.add_dependency('eventmachine',  '~> 0.12.10')
 
   s.files = Dir['README', 'MIT-LICENSE', 'lib/**/*']
   s.has_rdoc = false

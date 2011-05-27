@@ -3,12 +3,13 @@ PATH
   specs:
     cramp (0.12)
       activesupport (~> 3.0.4)
-      eventmachine
+      eventmachine (~> 0.12.10)
       rack (~> 1.2.1)
 
 GEM
   remote: http://rubygems.org/
   specs:
+    abstract (1.0.0)
     activemodel (3.0.4)
       activesupport (= 3.0.4)
       builder (~> 2.1.2)
@@ -29,8 +30,10 @@ GEM
       eventmachine (>= 0.12.9)
     em-synchrony (0.2.0)
       eventmachine (>= 0.12.9)
+    erubis (2.6.6)
+      abstract (>= 1.0.0)
     escape_utils (0.2.0)
-    eventmachine
+    eventmachine (0.12.10)
     http_router (0.5.3)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
@@ -43,7 +46,7 @@ GEM
       unicorn (~> 3.4)
     thin (1.2.7)
       daemons (>= 1.0.9)
-      eventmachine 
+      eventmachine (>= 0.12.6)
       rack (>= 1.0.0)
     tzinfo (0.3.24)
     unicorn (3.4.0)
@@ -62,7 +65,8 @@ DEPENDENCIES
   cramp!
   em-http-request
   em-synchrony
-  eventmachine
+  erubis
+  eventmachine (~> 0.12.10)
   http_router
   mysql2
   rack (~> 1.2.1)
