@@ -4,7 +4,7 @@ gem 'cramp', :path => File.dirname(__FILE__)
 
 gem 'activesupport', '3.0.4'
 gem 'rack', '~> 1.2.1'
-gem 'eventmachine', '~> 0.12.10'
+gem 'eventmachine'
 
 group :test do
   gem 'http_router'
